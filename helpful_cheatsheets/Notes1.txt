@@ -1,0 +1,45 @@
+
+Notes: 
+
+- install connect-flash
+	- npm i connect-flash
+
+- **WE CANNOT USE CONNECT-FLASH WITHOUT AN EXPRESS SESSION**
+	- make sure u setup express session like below
+	- npm i express-session
+	- in app.js file, include the below lines
+	- const expressSession = require("express-session");
+	- app.use(expressSession({
+  		resave: false,
+  		saveUninitialized: false,
+  		secret: "merijaaan"
+		}))
+
+- make sure u put connect flash in a app.use function
+	- in app.js file, include the below lines
+	- const flash = require("connect-flash");
+	- app.use(flash());
+
+- create flash for any of the route
+	- crea
+- in any other route try to run app.use
+
+
+Authentication and Authorization:
+
+	- install these packages =>
+	- npm i passport passport-local passport-local-mongoose
+	- write app.js code first in app.js file and write it after view engine and before logger
+	- setup users.js then properly 
+	- in index.js try register first and then other codes as well
+
+Data Association :
+
+	- ek model se doosre model ke data ko jod dena "id" ke
+	  through matlab agar aap ke paas ek user hai toh wo post 
+	  banaayega hi, jab post banega toh wo user ke dwaara hi 
+	  banega, toh hum kya karte hai jab doh aise data aapas 
+	  mein closely related hote hai toh hum dono ko jod dete hai,
+	  ki ek model ke bane huye data ki "id" ko doosre model ke 
+	  data ko dedete hai, aur iss model ke data ki "id" pichhle
+	  model ke data ko dedete hai

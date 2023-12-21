@@ -1,0 +1,35 @@
+
+In index.js file :
+
+/* example db models and how we implement them for pinterst app */
+
+/* router.get("/alluserposts", async(req,res,next) => {
+  let user = await userModel
+  .findOne({_id: "658079763162ae8246cdeea6"})
+  .populate('posts');
+  res.send(user);
+}) */
+
+/* router.get("/createuser", async (req, res, next) => {
+  let createduser = await userModel.create({
+    username: "akshaya",
+    password: "abcd1234",
+    posts: [],
+    email: "abcd@ghefijk.com",
+    fullName: "AkshayaMaram",
+  });
+
+  res.send(createduser);
+}); */
+
+/* router.get("/createpost", async (req, res,next) => {
+  let createdpost = await postModel.create({
+    postText: "Hello guys!! I'm very excited, this is my second post!!",
+    user: "658079763162ae8246cdeea6",
+  });
+  let user = await userModel.findOne({ _id: "658079763162ae8246cdeea6"});
+  user.posts.push(createdpost._id);
+  await user.save();
+  res.send("DONE");
+}); */
+

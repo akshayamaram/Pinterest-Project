@@ -1,0 +1,10 @@
+
+Roadmap of building the project:
+
+1. /route par login and signup hoga
+2. /profile par aapke profile dikhege and aapke saved posts dikhege, aur ek uploaded
+    section hoga jo abhi nahi bana rahe
+3. /feed section par saari images dikhegi
+4. /click karke image ko open kar skte ho aur usko save  bhi kar skte ho
+5. /board/:boardname iss route par pura board dikhega
+6. setup passport
